@@ -84,10 +84,10 @@ def reset(screen, members):
     # pygame.display.update()
     
     members[0].__init__(args = ('./resource/yellow_50.png', 
-                    random.uniform(610, 1120), random.uniform(50, 470), 40, 40, 10, 10, 
+                    random.uniform(610, 1120), random.uniform(50, 470), 20, 20, 10, 10, 
                     control_unit1))
     members[1].__init__(args = ('./resource/red_50.png', 
-                    random.uniform(100, 610), random.uniform(50, 470), 40, 40, 10, 10,
+                    random.uniform(100, 610), random.uniform(50, 470), 20, 20, 10, 10,
                     control_unit2))
     members[-1].__init__(args = ('./resource/ball_25.png', 
                     597.5, 247.5, 0, 0, 0, 0))

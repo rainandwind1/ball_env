@@ -26,9 +26,9 @@ class ball(pygame.sprite.Sprite):
                 self.direction_x = keyboard_state[player.control_key[3]] - keyboard_state[player.control_key[2]]
                 self.direction_y = keyboard_state[player.control_key[1]] - keyboard_state[player.control_key[0]]
         # print(self.direction_x, self.direction_y, self.v_x, self.v_y)
-        self.rect.x = self.rect.x + self.direction_x * self.v_x #- 0.5 * self.a_x * (1. / tick_freq) ** 2 
-        self.rect.y = self.rect.y + self.direction_y * self.v_y #- 0.5 * self.a_y * (1. / tick_freq) ** 2
-        self.v_x -= self.a_x 
+        self.rect.x = self.rect.x + self.direction_x * self.v_x - self.direction_x * 0.5 * self.a_x 
+        self.rect.y = self.rect.y + self.direction_y * self.v_y - self.direction_y * 0.5 * self.a_y
+        self.v_x -= self.a_x
         self.v_y -= self.a_y
         if self.v_x <= 0:
             self.v_x = 0

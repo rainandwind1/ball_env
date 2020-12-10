@@ -19,10 +19,10 @@ def main_process():
     Ball = ball(args = ('./resource/ball_25.png', 
                     597.5, 247.5, 0, 0, 0, 0))
     Player1 = player(args = ('./resource/yellow_50.png', 
-                    random.uniform(610, 1120), random.uniform(50, 470), 10, 10, 10, 10,
+                    random.uniform(610, 1120), random.uniform(50, 470), 10, 10, 1.5, 1.5,
                     control_unit1))
     Player2 = player(args = ('./resource/red_50.png', 
-                    random.uniform(100, 610), random.uniform(50, 470), 10, 10, 10, 10, 
+                    random.uniform(100, 610), random.uniform(50, 470), 10, 10, 1.5, 1.5, 
                     control_unit2))
     members = [Player1, Player2, Ball]      # game 成员
     Referee = referee()
